@@ -100,7 +100,7 @@ chrome_options.add_argument("--disable-blink-features=AutomationControlled")
 chrome_options.add_argument("--disable-infobars")
 chrome_options.add_argument("--start-maximized")
 chrome_options.add_argument("--disable-extensions")
-chrome_options.binary_location = "/usr/local/bin/google-chrome"  # עדכון הנתיב למיקום החדש בקונטיינר
+chrome_options.binary_location = "/usr/bin/google-chrome-stable"  # עדכון הנתיב למיקום החדש בקונטיינר
 
 # השתמש ב-ChromeDriver שהתקנת בקונטיינר
 # הגדרת הנתיב למנהל ההתקן של Chrome
