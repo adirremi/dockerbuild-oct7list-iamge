@@ -100,11 +100,11 @@ chrome_options.add_argument("--disable-blink-features=AutomationControlled")
 chrome_options.add_argument("--disable-infobars")
 chrome_options.add_argument("--start-maximized")
 chrome_options.add_argument("--disable-extensions")
-chrome_options.binary_location = "/usr/bin/google-chrome-stable"  # עדכון הנתיב למיקום החדש בקונטיינר
+chrome_options.binary_location = "/usr/bin/google-chrome-stable"
 
 # השתמש ב-ChromeDriver שהתקנת בקונטיינר
 # הגדרת הנתיב למנהל ההתקן של Chrome
-service = Service('/usr/local/bin/chromedriver')
+service = Service('/usr/bin/chromedriver')
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
 #driver = webdriver.Chrome(options=chrome_options)
